@@ -3,14 +3,9 @@ name: CI
 on:
   push:
     branches:
-      - crawler
-      - har-file
-      - swagger
-      - brokencrystals
+      - task/learn
   pull_request:
     branches: [main]
-  schedule:
-    - cron: "0 0 * * THU"
 
 jobs:
   start_and_wait_scan:
